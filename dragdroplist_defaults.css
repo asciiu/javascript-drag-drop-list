@@ -1,0 +1,55 @@
+/* Put this inside a @media qualifier so Netscape 4 ignores it */
+@media screen, print { 
+
+    
+	/* Turn off list bullets */
+	#categories li { 
+		list-style:none;
+		font-size: 12pt;
+		font-family:serif;
+		line-height:19.2px;
+		margin-bottom:0;
+		padding-left:0;
+	}
+	
+	#categories li ul {
+		margin-top:0;
+		position:relative;
+	}
+	
+	/* Control how "spaced out" the tree is */
+	ul, ul li {margin-left:10px; padding:0px; }
+	/* Provide space for our own "bullet" inside the LI */
+	ul  li           .bullet { padding-left: 15px; }
+	/* Show "bullets" in the links, depending on the class of the LI that the link's in */
+	ul  li.liOpen    .bullet { cursor: pointer; background: url(images/minus.gif)  center left no-repeat; }
+	ul  li.liClosed  .bullet { cursor: pointer; background: url(images/plus.gif)   center left no-repeat; }
+	ul  li.liBullet  .bullet { cursor: default; background: center left no-repeat; }
+	/* Sublists are visible or not based on class of parent LI */
+	ul  li.liOpen    ul { display: block; }
+	ul  li.liClosed  ul { display: none; }
+	/* Format menu items differently depending on what level of the tree they are in */
+	ul  li { font-size: 12pt; }
+
+	span.item_wrapper.over { background:#1ff; }
+	
+	.invisible { display:none; }
+
+	.marker {
+		display:inline;
+		float:left;
+		position:relative;
+		height:10px;
+		top: -10px;
+		left:15px;
+		width:2px;
+		background:#333;
+	}
+	
+	
+	ul#categories { 
+		background:#eee;
+		font: arial;
+	}
+	
+}
