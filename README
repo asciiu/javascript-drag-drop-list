@@ -1,0 +1,40 @@
+
+Example usage:
+
+<html>
+<head>
+  <!-- Step 1: get prototype.js and include it as a script -->
+  <script src="javascripts/prototype.js" type="text/javascript"></script>
+  <!-- Step 2: get scriptaculous and include it as a script -->
+  <script src="javascripts/scriptaculous.js" type="text/javascript"></script>
+  <!-- Step 3: include dragdroplist.js as a script -->
+  <script src="dragdroplist.js" type="text/javascript"></script>
+  <!-- Step 4: include the default stylesheet -->
+  <link rel="stylesheet" type="text/css" href="dragdroplist_defaults.css"> 
+</head>
+
+<body>
+	<!-- Step 5: define you unordered list with and unique ID -->
+	<ul id="categories">
+		<!-- Step 6: add some list items -->
+		<li>item_1
+			<ul>
+				<li>item_9</li>
+			</ul>
+		</li>
+		<li>item_2</li>
+		<li>item_3</li>
+		<li>item_4</li>
+		<li>item_5</li>
+		<li>item_6</li>
+		<li>item_7</li>
+		<li>item_8</li>
+	</ul>
+	<script type="text/javascript">
+	    // Step 7: create your drag drop list using the id of the unordered list
+		var tree = new DragDropList("categories");
+		//tree.destroy();
+	</script>
+
+</body>
+</html>

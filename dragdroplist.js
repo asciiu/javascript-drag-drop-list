@@ -1,3 +1,7 @@
+// Author: Ellyssin Gimhae
+// Date: 8/15/11
+// License: GPL
+
 var DragDropList = Class.create({
 	initialize: function(ul) {
 		
